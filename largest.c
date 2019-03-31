@@ -4,17 +4,17 @@ int main()
   int num1,num2,num3;
   printf("Enter three numbers\n");
   scanf("%d %d %d",&num1,&num2,&num3);
-  if((a > b) && (a > c)
+  if((num1 > num2) && (num1 > num3)
   {
     printf("%d",num1)
   }
-  elif((b > a) && (b > c))
+  elif((num2 > num1) && (num2 > num3))
   {
     printf("%d",num2);
   }
   else
   {
-    printf("c is greatest");
+    printf("%d",num3);
   }
  return 0;
  }
