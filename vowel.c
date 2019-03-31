@@ -2,9 +2,9 @@
 int main()
 {
   char c;
-  print("Enter a character\n");
+  printf("Enter a character\n");
   scanf("%c",&c);
-  if(c =='A-Z' || c=='a-z')
+  if(c =='A'-'Z' || c=='a'-'z')
   {
     if(c == 'a' || c == 'e' || c == 'i' || c== 'o' || c == 'u')
     {
