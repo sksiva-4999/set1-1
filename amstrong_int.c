@@ -1,30 +1,29 @@
 #include<stdio.h>
 int main()
 {
-  int digit,i=0,remainder,cube,num,q;
+  int digit,i=0,remainder,cube,num,q,j=0,d;
   int sum=0;
   scanf("%d",&digit);
   scanf("%d",&q);
-  for(i=digit+1;i<q;i++)
+  num=digit;
+  d=num;
+  for(i=digit;i<q;i++)
   {
-    num=digit;
-    while(i < digit)
+    while(j < d)
     {
-      remainder=digit%10;
+      remainder=d%10;
       cube=remainder*remainder*remainder;
       sum=sum+cube;
-      digit=digit/10;
-      i++;
+      d=d/10;
+      j++;
+      
     }
-    if(num == sum)
+    if(i == sum)
     {
-      printf("yes");
+      printf("%d\t",num);
     }
-    else
-    {
-      printf("No");
-    }
-    digit++;
+    num++;
+    d=num;
    }
   return 0;
  }
