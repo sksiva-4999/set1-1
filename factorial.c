@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-  int num,i;
+  int num,i,limit;
   scanf("%d",&num);
-  for(i=0;i<num;i++)
+  limit=num;
+  for(i=1;i<limit;i++)
   {
     num=num*i;
   }
